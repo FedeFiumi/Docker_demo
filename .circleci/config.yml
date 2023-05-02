@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  app_run:
+    docker:
+      - image: fedefiumi/docker_demo-linux_18.04:0.0.1
+        auth:
+          username: fedefiumi
+          password: $DKRPD
+    steps:
+      - checkout
+      - run:
+          name: Launch the app
+          command: python3 src/app.py
