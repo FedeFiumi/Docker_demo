@@ -12,3 +12,8 @@ jobs:
       - run:
           name: Launch the app
           command: python3 src/app.py
+
+workflows:
+  default_workflow:
+    jobs:
+      - app_run
