@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: fedefiumi/docker_demo-linux_18.04:0.0.1
         auth:
-          username: $DKRUN
+          username: fedefiumi
           password: $DKRPD
     steps:
       - checkout
