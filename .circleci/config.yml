@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   app_run:
     docker:
-      - image: fedefiumi/docker_demo-linux_18.04:0.0.1
+      - image: $DKRUN/docker_demo-linux_18.04:0.0.1
         auth:
           username: $DKRUN
           password: $DKRPD
